@@ -20,7 +20,7 @@
 var http = require("http");
 var url = require("url");
 var fs = require("fs");
-let port = 8080;
+let PORT = procces.env.PORT || 5000;
 
 http
   .createServer((req, res) => {
@@ -45,6 +45,6 @@ http
       return res.end();
     });
   })
-  .listen(port);
+  .listen(PORT);
 
 console.log(`My node server is running on port ${port}`);
