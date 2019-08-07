@@ -47,4 +47,4 @@ http
   })
   .listen(PORT);
 
-console.log(`My node server is running on port ${port}`);
+console.log(`My node server is running on port ${PORT}`);
